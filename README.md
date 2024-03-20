@@ -7,13 +7,9 @@
 
 ## Aca model title...
 
-**This repository contains:**
 
 
 
-### Parameter 1:
-
-![Alt text](copy_number.png?raw=true "Title")
 
 
 
