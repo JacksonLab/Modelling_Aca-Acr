@@ -1,24 +1,16 @@
 # Aca-Acr regulatory circuit modelling
 
-This repository contains the code used for stocastic modeling of the Aca-Acr regulatory circuit described in Birkholz et al., 2024, Phage anti-CRISPR control by an RNA- and DNA-binding helix–turn–helix protein.
+This repository contains the code used for stocastic modeling of the Aca-Acr regulatory circuit described in Birkholz *et al*. 2024: *Phage anti-CRISPR control by an RNA- and DNA-binding helix–turn–helix protein.*
 
-The script [python aca_model_hpc.py] is setup to be called in paralell on an HPC platform using:
+The script [python aca_model_hpc.py] is called in parallel on an HPC platform using:
 
 ```bash
-python aca_model_hpc.py --parameter [Parameter to vary for analysis] --outdir [Output directory] --nsamples [Number of simulations to run per thread] --threads [Threads]
+python aca_model_hpc.py --parameter [parameter_to_vary_for_analysis] --outdir [output_directory] --nsamples [number_of_simulations_to_run_per_thread] --threads [threads]
 ```
 
-Where [Parameter to vary for analysis] is one of:
+Where [parameter_to_vary_for_analysis] is one of:
 
-| copy_number |
-| replication_rate |
-| transcription_rate |
-| translation_rate |
-| rna_kon |
-| dna_kon |
-| rna_decay |
-| rna_kd |
-| dna_kd |
+| copy_number | replication_rate | transcription_rate | translation_rate | rna_kon | dna_kon | rna_decay | rna_kd | dna_kd |
 
 Default paramter values and those varied for robustness analyses are hard-coded in the runscript.
 
